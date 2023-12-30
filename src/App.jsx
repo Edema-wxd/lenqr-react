@@ -5,6 +5,12 @@ import DashDetails from "./pages/dashboard/DashDetails";
 import DashMain from "./pages/dashboard/DashMain";
 import DashLayout from "./pages/dashboard/DashLayout";
 import Dash404 from "./pages/dashboard/Dash404";
+import DDdocs from "./pages/dashboard/mini/DDdocs";
+
+import DDgeneral from "./pages/dashboard/mini/DDgeneral";
+import DDbank from "./pages/dashboard/mini/DDbank";
+import DDloan from "./pages/dashboard/mini/DDloan";
+import DDsave from "./pages/dashboard/mini/DDsave";
 
 function App() {
   return (
@@ -14,11 +20,11 @@ function App() {
         <Route path="dashboard" element={<DashLayout />}>
           <Route path="main" element={<DashMain />} />
           <Route path=":clientId" element={<DashDetails />}>
-            <Route path='general' />
-            <Route path="documents"/>
-            <Route path="bank"/>
-            <Route path="loans"/>
-            <Route path="savings"/>            
+            <Route path="general" element={<DDgeneral />} />
+            <Route path="documents" element={<DDdocs />} />
+            <Route path="bank" element={<DDbank />} />
+            <Route path="loans" element={<DDloan />} />
+            <Route path="savings" element={<DDsave />} />
           </Route>
           <Route path="*" element={<Dash404 />} />
         </Route>
