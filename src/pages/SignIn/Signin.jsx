@@ -1,41 +1,53 @@
 import React from "react";
-import { Stack, Container, TextField, Button } from "@mui/material";
-import {useNavigate} from "react-router-dom"
+import { Stack, Container, TextField, Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+import pablo from "../../assets/pablo.png";
 
 function Signin() {
-    const navigate  = useNavigate()
   return (
-    <Container>
-      <Stack direction="row" justifyContent="center" alignItems="center">
-        <img src="" alt="" />
+    <Container fixed>
+      <Stack
+        height={"100vh"}
+        direction={{ xs: "column", md: "row" }}
+        justifyContent="center"
+        alignItems="center"
+        gap={12}
+      >
+        <img src={pablo} alt="" />
         <div>
-          <h2>Welcome</h2>
+          <Typography variant="h2" color="textSecondary">
+            Welcome
+          </Typography>
           <p>Enter details to login.</p>
           <form action="">
-            <Stack>
-              <TextField
-                fullWidth
-                type="email"
-                id="email"
-                placeholder="Email"
-              />
+            <Stack gap={2}>
+              <TextField fullWidth type="email" label="Email" id="email" />
               <TextField
                 fullWidth
                 type="password"
                 id="password"
-                placeholder="Password"
+                label="Password"
               />
-              <Button variant="text" style={{ textTransform: "capitalize" }}>
+              <Button
+                variant="text"
+                style={{
+                  textTransform: "uppercase",
+                }}
+                color="secondary"
+              >
                 forgot password?
               </Button>
-              <Button
-                variant="contained"
-                style={{ textTransform: "capitalize" }}
-                size="large"
-                onClick={navigate("dashboard/main")}
-              >
-                Submit
-              </Button>
+              <Link to="dashboard/main" style={{ width: "100%" }}>
+                <Button
+                  variant="contained"
+                  style={{ textTransform: "uppercase" }}
+                  size="large"
+                  fullWidth
+                  color="secondary"
+                >
+                  Submit
+                </Button>
+              </Link>
             </Stack>
           </form>
         </div>
