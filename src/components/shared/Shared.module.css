@@ -1,0 +1,22 @@
+.Searchb {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 20px;
+  align-items: center;
+  width: 400px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgb(33, 63, 125, 0.2);
+  background: #fff;
+}
+.SBp {
+  color: rgb(33, 63, 125, 0.2);
+}
+.SBbtn {
+  border: none;
+  border-radius: 0 8px 8px 0;
+  width: 56px;
+  height: 40px;
+  background-color: #39cdcc;
+}
