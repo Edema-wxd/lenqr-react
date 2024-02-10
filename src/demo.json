@@ -1,0 +1,172 @@
+[
+  {
+    "id": "73d7a827-3f2b-4f75-af98-ed9b21f90290",
+    "organisation": "Fishland",
+    "username": "fulton23",
+    "email": "fulton_morgan@gmail.com",
+    "cmail": "fulton_morgan@earthmark.loans",
+    "profile": {
+      "name": "Fulton Morgan",
+      "company": "Earthmark",
+      "phone": 651536893305,
+      "twitter": "@fulton_morgan",
+      "facebook": "Fulton Morgan",
+      "instagram": "@fulton_morgan",
+      "joined": "Dec 27, 2014 10:12 AM",
+      "debt": 639912,
+      "status": "Blacklisted",
+      "bvn": 79402315326,
+      "account": 3537256650,
+      "bank": "Glukgluk",
+      "gender": "Female",
+      "marital": "Married",
+      "children": "3",
+      "residence": "Highrise"
+    },
+    "education": {
+      "level": "WAEC",
+      "employment": "Employed",
+      "sector": "Financial services",
+      "duration": "4 years",
+      "income": "₦400,000 - ₦700,000",
+      "repayment": "₦70,000"
+    },
+    "loans": [
+      {
+        "amount": 350457,
+        "started": "Jan 23, 2013 19:17 PM",
+        "completed": "Nov 28, 2011 03:20 AM"
+      },
+      {
+        "amount": 80541,
+        "started": "Sep 10, 2011 18:23 PM",
+        "completed": "Oct 17, 2011 06:18 AM"
+      }
+    ],
+    "guarantor": [
+      {
+        "name": "Trujillo Moreno",
+        "phone": 408181071475,
+        "mail": "trujillo_moreno@gmail.com",
+        "relation": "Brother"
+      }
+    ]
+  },
+  {
+    "id": "acc7a4ca-ad5a-413e-9164-18f5cee90f0f",
+    "organisation": "Handshake",
+    "username": "cox23",
+    "email": "cox_davis@gmail.com",
+    "cmail": "cox_davis@fanfare.mma",
+    "profile": {
+      "name": "Cox Davis",
+      "company": "Fanfare",
+      "phone": 551562030819,
+      "twitter": "@cox_davis",
+      "facebook": "Cox Davis",
+      "instagram": "@cox_davis",
+      "joined": "Sep 26, 2014 09:54 AM",
+      "debt": 433859,
+      "status": "Active",
+      "bvn": 43357034696,
+      "account": 5095963579,
+      "bank": "Marketoid",
+      "gender": "Male",
+      "marital": "Divorced",
+      "children": "1",
+      "residence": "Apartment"
+    },
+    "education": {
+      "level": "PGCE",
+      "employment": "Employed",
+      "sector": "Production",
+      "duration": "10 years",
+      "income": "< ₦100,000",
+      "repayment": "₦10,000"
+    },
+    "loans": [
+      {
+        "amount": 828549,
+        "started": "Feb 26, 2011 17:54 PM",
+        "completed": "Apr 13, 2013 23:28 PM"
+      },
+      {
+        "amount": 19007,
+        "started": "Sep 07, 2012 21:09 PM",
+        "completed": "Jul 25, 2010 17:58 PM"
+      }
+    ],
+    "guarantor": [
+      {
+        "name": "Lenora Gamble",
+        "phone": 301703178723,
+        "mail": "lenora_gamble@gmail.com",
+        "relation": "Uncle"
+      }
+    ]
+  },
+  {
+    "id": "ac423f9f-95da-45d5-94ee-fb9dab1b1890",
+    "organisation": "Kineticut",
+    "username": "marcy23",
+    "email": "marcy_warren@gmail.com",
+    "cmail": "marcy_warren@kidstock.to",
+    "profile": {
+      "name": "Marcy Warren",
+      "company": "Kidstock",
+      "phone": 176782705219,
+      "twitter": "@marcy_warren",
+      "facebook": "Marcy Warren",
+      "instagram": "@marcy_warren",
+      "joined": "Jun 15, 2011 03:19 AM",
+      "debt": 823897,
+      "status": "Blacklisted",
+      "bvn": 61909456664,
+      "account": 1725226507,
+      "bank": "Medalert",
+      "gender": "Male",
+      "marital": "Divorced",
+      "children": "2",
+      "residence": "Duplex"
+    },
+    "education": {
+      "level": "B.Sc",
+      "employment": "Employed",
+      "sector": "Education",
+      "duration": "13 years",
+      "income": "₦100,000 - ₦200,000",
+      "repayment": "₦50,000"
+    },
+    "loans": [
+      {
+        "amount": 674210,
+        "started": "Oct 27, 2015 23:46 PM",
+        "completed": "Oct 18, 2010 18:22 PM"
+      },
+      {
+        "amount": 124127,
+        "started": "Oct 03, 2011 23:19 PM",
+        "completed": "Sep 06, 2015 19:24 PM"
+      },
+      {
+        "amount": 446736,
+        "started": "Dec 07, 2011 19:02 PM",
+        "completed": "Sep 30, 2013 21:59 PM"
+      }
+    ],
+    "guarantor": [
+      {
+        "name": "Oliver Mann",
+        "phone": 167613394907,
+        "mail": "oliver_mann@gmail.com",
+        "relation": "Sister"
+      },
+      {
+        "name": "Gardner Rivera",
+        "phone": 787356322491,
+        "mail": "gardner_rivera@gmail.com",
+        "relation": "Aunt"
+      }
+    ]
+  }
+]
