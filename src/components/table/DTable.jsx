@@ -13,6 +13,8 @@ import TableSortLabel from "@mui/material/TableSortLabel";
 import Toolbar from "@mui/material/Toolbar";
 import Paper from "@mui/material/Paper";
 import { visuallyHidden } from "@mui/utils";
+import rawballs from "../../demo.json";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function createData(
   id,
@@ -33,21 +35,34 @@ function createData(
     status,
   };
 }
-
 const rows = [
-  createData(1, "Cupcake", 305, 3.7, 67, 4.3, "appple"),
-  createData(2, "Donut", 452, 25.0, 51, 4.9),
-  createData(3, "Eclair", 262, 16.0, 24, 6.0),
-  createData(4, "Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData(5, "Gingerbread", 356, 16.0, 49, 3.9),
-  createData(6, "Honeycomb", 408, 3.2, 87, 6.5),
-  createData(7, "Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData(8, "Jelly Bean", 375, 0.0, 94, 0.0),
-  createData(9, "KitKat", 518, 26.0, 65, 7.0),
-  createData(10, "Lollipop", 392, 0.2, 98, 0.0),
-  createData(11, "Marshmallow", 318, 0, 81, 2.0),
-  createData(12, "Nougat", 360, 19.0, 9, 37.0),
-  createData(13, "Oreo", 437, 18.0, 63, 4.0),
+  createData(
+    rawballs[0]["id"],
+    rawballs[0]["organisation"],
+    rawballs[0]["profile"]["name"],
+    rawballs[0]["email"],
+    rawballs[0]["profile"]["phone"],
+    rawballs[0]["profile"]["joined"],
+    rawballs[0]["profile"]["status"]
+  ),
+  createData(
+    rawballs[1]["id"],
+    rawballs[1]["organisation"],
+    rawballs[1]["profile"]["name"],
+    rawballs[1]["email"],
+    rawballs[1]["profile"]["phone"],
+    rawballs[1]["profile"]["joined"],
+    rawballs[1]["profile"]["status"]
+  ),
+  createData(
+    rawballs[2]["id"],
+    rawballs[2]["organisation"],
+    rawballs[2]["profile"]["name"],
+    rawballs[2]["email"],
+    rawballs[2]["profile"]["phone"],
+    rawballs[2]["profile"]["joined"],
+    rawballs[2]["profile"]["status"]
+  ),
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -77,7 +92,6 @@ function stableSort(array, comparator) {
   });
   return stabilizedThis.map((el) => el[0]);
 }
-
 const headCells = [
   {
     id: "organisation",
@@ -192,6 +206,7 @@ EnhancedTableToolbar.propTypes = {
 };
 
 export default function EnhancedTable() {
+  const navigate = useNavigate();
   const [order, setOrder] = React.useState("asc");
   const [orderBy, setOrderBy] = React.useState("username");
   const [page, setPage] = React.useState(0);
@@ -244,7 +259,7 @@ export default function EnhancedTable() {
                 return (
                   <TableRow
                     hover
-                    role="checkbox"
+                    onClick={() => navigate(`/dashboard/${row.id}`)}
                     tabIndex={-1}
                     key={row.id}
                     sx={{ cursor: "pointer" }}
@@ -262,7 +277,7 @@ export default function EnhancedTable() {
                     <TableCell align="center">{row.profilephone}</TableCell>
                     <TableCell align="center">{row.profilejoined}</TableCell>
                     <TableCell align="center">{row.status}</TableCell>
-                    <TableCell align="center">func </TableCell>
+                    <TableCell align="center">:</TableCell>
                   </TableRow>
                 );
               })}

@@ -1,0 +1,12 @@
+.Main {
+  padding: 60px;
+  background: #fbfbfb;
+}
+.Cardholder {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 2.5rem 0;
+}
